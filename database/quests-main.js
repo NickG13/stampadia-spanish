@@ -12,14 +12,14 @@ function loadQuestsMain(MODIFIERS) {
 			id:"[CODEX-Events] Main quest - The Missing Key: Find the key and beat the boss.",
 			minRooms:4,
 			adventureTitle:[
-				"The Quest For The {villainName}",
-				"The {villainName}'s Hideout",
-				"The {villainName}'s Trap",
-				"The {villainName}'s Plan",
-				"The Dungeons Of The {villainName}",
-				"The {heroClass}'s Revenge",
-				"The {heroClass}'s Quest",
-				"The Lost {placeName}"
+				"La Aventura del {villainName}",
+				"Escondite del {villainName}",
+				"La Trampa del {villainName}",
+				"El Plan del {villainName}",
+				"Las Mazmorras del {villainName}",
+				"La Venganza del {heroClass}",
+				"La Aventura del {heroClass}",
+				"El {placeName} perdido"
 			],
 			steps:[
 				[
@@ -29,7 +29,7 @@ function loadQuestsMain(MODIFIERS) {
 						atPercentage:{from:50,to:90},
 						items:[{genericItem:"bossKey"},{id:"enemy",level:1}],
 						roomDescriptions:[
-							[ "{ifMoveOn:bossKey}{then}You got the {bossKey}, {markRoom:keyRoom}, {markItem:bossKey}" ]
+							[ "{ifMoveOn:bossKey}{then}Obtuviste {bossKey}, {markRoom:keyRoom}, {markItem:bossKey}" ]
 						]
 					},
 					{
@@ -53,7 +53,7 @@ function loadQuestsMain(MODIFIERS) {
 					labels:STARTINGROOMLABELS,
 					roomDescriptions:[
 						[
-							"\"Please, hero! Kill the {villainName} and save the {placeName}!\"",
+							"\"¡Por favor, héroe! Mata al {villainName} y salva {placeName}\"",
 							"{ifMoveOnStairs}{and}{ifRoomIsMarked:startingRoom}{then}{winningScene}"
 						]
 					]
@@ -65,17 +65,17 @@ function loadQuestsMain(MODIFIERS) {
 			id:"[CODEX-Events] Main quest - The Boss Battle: Beat the boss.",
 			minRooms:1,
 			adventureTitle:[
-				"The End Of The {villainName}",
-				"The {villainName}'s Bounty",
-				"The {villainName}'s Den",
-				"The {villainName}'s Revenge",
-				"The Battle Of The {villainName}",
-				"To The Rescue Of The {goodGuyName}",
-				"The {heroClass}'s Final Battle",
-				"The {villainName} &amp; The {goodGuyName}",
-				"The {goodGuyName} &amp; The {villainName}",
-				"The Cursed {placeName}",
-				"The {villainName}'s {placeName}",
+				"El Final del {villainName}",
+				"La Recompensa del {villainName}",
+				"El Nido del {villainName}",
+				"La Venganza del {villainName}",
+				"La Batalla del {villainName}",
+				"Al Rescate del {goodGuyName}",
+				"La Batalla final del {heroClass}",
+				"El {villainName} y el {goodGuyName}",
+				"El {goodGuyName} y el {villainName}",
+				"El {placeName} Maldito",
+				"El {placeName} del {villainName}",
 			],
 			steps:[
 				[
@@ -86,7 +86,7 @@ function loadQuestsMain(MODIFIERS) {
 						items:[{id:"enemy",level:3,ignoreXp:true}],
 						isExclusive:true,
 						roomDescriptions:[
-							[ "\"The {goodGuyName} will die... and so will you!\", {noEscape}{newRule}{ifNoFoes}{then}{markRoom:startingRoom}" ]
+							[ "\"¡El {goodGuyName} morirá... y tú también!\", {noEscape}{newRule}{ifNoFoes}{then}{markRoom:startingRoom}" ]
 						]
 					}
 				]
@@ -97,7 +97,7 @@ function loadQuestsMain(MODIFIERS) {
 					labels:STARTINGROOMLABELS,
 					roomDescriptions:[
 						[
-							"\"Please, hero! You're the only one that can stop the {villainName}!\"",
+							"\"¡Por favor, héroe! ¡Solo tú puedes detener al {villainName}!\"",
 							"{ifMoveOnStairs}{and}{ifRoomIsMarked:startingRoom}{then}{winningScene}"
 						]
 					]
@@ -109,13 +109,13 @@ function loadQuestsMain(MODIFIERS) {
 			id:"[CODEX-Events] Main quest - The Gang: Beat a sequence of enemies.",
 			minRooms:3,
 			adventureTitle:[
-				"The {placeName}'s {villainName} Gang",
-				"The {goodGuyName} Deception",
-				"The {heroClass}'s Expedition",
-				"The {placeName} Liberation",
-				"The {villainName} Trail",
-				"The Reclaimed {placeName}",
-				"The {heroClass}'s Harvest",
+				"La Banda del {placeName} del {villainName}",
+				"El Engaño del {goodGuyName}",
+				"La Expedición del {heroClass}",
+				"La Liberación del {placeName}",
+				"El Rastro del {villainName}",
+				"El {placeName} Reclamado",
+				"La Cosecha del {heroClass}",
 			],
 			steps:[
 				[
@@ -126,8 +126,8 @@ function loadQuestsMain(MODIFIERS) {
 						items:[{id:"enemy",level:0}],
 						roomDescriptions:[
 							[
-								"\"We will stop you at any cost!\"",
-								"{ifKilledLastFoe}{then}\"I've to warn... the {villainName}\", {markRoom:enemy1room}"
+								"\"¡Te detendremos!\"",
+								"{ifKilledLastFoe}{then}\"Debo advertir... al {villainName}\", {markRoom:enemy1room}"
 							]
 						]
 					},
@@ -138,8 +138,8 @@ function loadQuestsMain(MODIFIERS) {
 						items:[{id:"enemy",level:1}],
 						roomDescriptions:[
 							[
-								"{ifRoomIsNotMarked:enemy1room}{then}You feel watched, {roomIsEmpty}, {stopReading}",
-								"{ifKilledLastFoe}{then}\"Wrong move, bwahahah!\", {markRoom:enemy2room}"
+								"{ifRoomIsNotMarked:enemy1room}{then}Te vigilan, {roomIsEmpty}, {stopReading}",
+								"{ifKilledLastFoe}{then}\"¡Error, jajajaja!\", {markRoom:enemy2room}"
 							]
 						]
 					},
@@ -152,7 +152,7 @@ function loadQuestsMain(MODIFIERS) {
 						roomDescriptions:[
 							[
 								"{ifRoomIsNotMarked:enemy2room}{then}{roomIsEmpty}, {stopReading}",
-								"\"You're wasting time. The {placeName} is mine!\", {noEscape}{newRule}{ifNoFoes}{then}{markRoom:startingRoom}"
+								"\"Pierdes el tiempo, el ¡{placeName} es mío!\", {noEscape}{newRule}{ifNoFoes}{then}{markRoom:startingRoom}"
 							]
 						]
 					}
@@ -164,7 +164,7 @@ function loadQuestsMain(MODIFIERS) {
 					labes:STARTINGROOMLABELS,
 					roomDescriptions:[
 						[
-							"\"Sir, we've to stop the {villainName} forces!\"",
+							"\"¡Debemos detener al {villainName}!\"",
 							"{ifMoveOnStairs}{and}{ifRoomIsMarked:startingRoom}{then}{winningScene}"
 						]
 					]
@@ -176,15 +176,15 @@ function loadQuestsMain(MODIFIERS) {
 			id:"[CODEX-Events] Main quest - The Spell: Break the spell and kill the bad guy.",
 			minRooms:4,
 			adventureTitle:[
-				"The {villainName} Deception",
-				"The {heroClass}'s Dilemma",
-				"The {placeName} Ritual",
-				"The Cursed {placeName}",
-				"The {goodGuyName}'s Murderer",
-				"The {goodGuyName} Slayer",
-				"The {heroClass}'s Murder",
-				"The {goodGuyName} Versus the {heroClass}",
-				"The {villainName}'s Ritual",				
+				"La Treta del {villainName}",
+				"El Dilema del {heroClass}",
+				"El Ritual del {placeName}",
+				"El {placeName} Maldito",
+				"El Asesino del {goodGuyName}",
+				"El {goodGuyName} Asesino",
+				"El Asesinato del {heroClass}",
+				"El {goodGuyName} VS el {heroClass}",
+				"El Ritual del {villainName}",				
 			],
 			steps:[
 				[
@@ -195,8 +195,8 @@ function loadQuestsMain(MODIFIERS) {
 						items:[{id:"enemy",level:1}],						
 						roomDescriptions:[
 							[
-								"A sorcerer is holding a ritual.",
-								"{ifNoFoes}{then}{hide}The ritual has been interrupted, {markRoom:spellRoom}"
+								"Un mago está hace un ritual.",
+								"{ifNoFoes}{then}{hide}El ritual ha sido interrumpido, {markRoom:spellRoom}"
 							]
 						]
 					},
@@ -208,7 +208,7 @@ function loadQuestsMain(MODIFIERS) {
 						isExclusive:true,
 						roomDescriptions:[
 							[
-								"\"I'm the {goodGuyName}. Can't control... Help, {heroClass}!\", {noEscape}{newRule}{ifNoFoes}{then}{markRoom:startingRoom}"
+								"\"Soy el {goodGuyName}. ¡Alguien me controla, {heroClass}!\", {noEscape}{newRule}{ifNoFoes}{then}{markRoom:startingRoom}"
 							]
 						]
 					}
@@ -220,8 +220,8 @@ function loadQuestsMain(MODIFIERS) {
 					labels:STARTINGROOMLABELS,
 					roomDescriptions:[
 						[
-							"{ifMoveOnStairs}{and}{ifRoomIsMarked:startingRoom}{and}{ifRoomIsMarked:spellRoom}{then}You did it!{hide}{stopReading}",
-							"{ifMoveOnStairs}{and}{ifRoomIsMarked:startingRoom}{then}You did it!{hide}but sacrified the {goodGuyName}'s life.",
+							"{ifMoveOnStairs}{and}{ifRoomIsMarked:startingRoom}{and}{ifRoomIsMarked:spellRoom}{then}¡Bien hecho!{hide}{stopReading}",
+							"{ifMoveOnStairs}{and}{ifRoomIsMarked:startingRoom}{then}Conseguido{hide}pero sacrificaste al {goodGuyName}.",
 						]
 					]
 				}
@@ -232,14 +232,14 @@ function loadQuestsMain(MODIFIERS) {
 			id:"[CODEX-Events] Main quest - The Broken Key: Collect the key parts and beat the boss.",
 			minRooms:4,
 			adventureTitle:[
-				"The {bossKey} Hunt",
-				"The Shattered {bossKey}",
-				"The {bossKey}",
-				"The {bossKey} Of The {placeName}",
-				"The {villainName}'s {bossKey}",
-				"The Shattered {villainName}",
-				"The Quest For The {bossKey}",
-				"The {heroClass}'s {bossKey}",
+				"La Caza de la {bossKey}",
+				"La {bossKey} Rota",
+				"La {bossKey}",
+				"La {bossKey} del {placeName}",
+				"La {bossKey} del {villainName}",
+				"El {villainName} Destrozado",
+				"La aventura de la {bossKey}",
+				"La {bossKey} del {heroClass}",
 			],
 			steps:[
 				[
@@ -249,7 +249,7 @@ function loadQuestsMain(MODIFIERS) {
 						atPercentage:1,
 						items:[{genericItem:"bossKey"}],
 						roomDescriptions:[
-							[ "{ifMoveOn:bossKey}{then}You got a {bossKey} part, {markRoom:keyRoom1}, {markItem:bossKey}" ]
+							[ "{ifMoveOn:bossKey}{then}+1 parte de {bossKey}, {markRoom:keyRoom1}, {markItem:bossKey}" ]
 						]
 					},
 					{
@@ -258,7 +258,7 @@ function loadQuestsMain(MODIFIERS) {
 						atPercentage:25,
 						items:[{genericItem:"bossKey"},{id:"enemy",level:0}],
 						roomDescriptions:[
-							[ "{ifMoveOn:bossKey}{then}You got a {bossKey} part, {markRoom:keyRoom2}, {markItem:bossKey}" ]
+							[ "{ifMoveOn:bossKey}{then}+1 parte de {bossKey}, {markRoom:keyRoom2}, {markItem:bossKey}" ]
 						]
 					},
 					{
@@ -267,7 +267,7 @@ function loadQuestsMain(MODIFIERS) {
 						atPercentage:60,
 						items:[{genericItem:"bossKey"},{id:"enemy",level:1}],
 						roomDescriptions:[
-							[ "{ifMoveOn:bossKey}{then}You got a {bossKey} part, {markRoom:keyRoom3}, {markItem:bossKey}" ]
+							[ "{ifMoveOn:bossKey}{then}+1 parte de {bossKey}, {markRoom:keyRoom3}, {markItem:bossKey}" ]
 						]
 					},
 					{
@@ -291,7 +291,7 @@ function loadQuestsMain(MODIFIERS) {
 					labels:STARTINGROOMLABELS,
 					roomDescriptions:[
 						[
-							"\"Please, hero! Kill the {villainName} and save the {placeName}!\"",
+							"\"¡Por favor, héroe! Mata al {villainName} y salva {placeName}!\"",
 							"{ifMoveOnStairs}{and}{ifRoomIsMarked:startingRoom}{then}{winningScene}"
 						]
 					]
@@ -303,11 +303,11 @@ function loadQuestsMain(MODIFIERS) {
 			id:"[CODEX-Events] Main quest - The Lost Item: Return an item to NPC and unlock the boss and fight.",
 			minRooms:4,
 			adventureTitle:[
-				"The Lost {documentName}",
-				"The {documentName}",
-				"The {explorerName}",
-				"The Missing {explorerName}",
-				"The {placeName} Mystery"
+				"El {documentName} Perdido",
+				"El {documentName}",
+				"El {explorerName}",
+				"El {explorerName} Perdido",
+				"El Misterio del {placeName}"
 			],
 			steps:[
 				[
