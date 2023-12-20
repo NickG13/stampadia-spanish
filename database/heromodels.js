@@ -220,7 +220,7 @@ function loadHeroModels() {
 		// [CODEX-Heroes] Class - The Ranger: An archer that learns from the beasts. It's equipped with a bow and a Focus item.
 		{
 			id:"ranger",
-			heroClass:"Guardabosques",
+			heroClass:"Arquero",
 			goldNotes:"Oro(G) ({ifCrossDoor}{then}{ifPayGold:1})",
 			skills:[
 				[ {skill:"ATK -1\nRNG 1"}, {skill:"MOV-3"} ],
