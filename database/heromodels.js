@@ -8,20 +8,20 @@ function loadHeroModels() {
 		// [CODEX-Heroes] Class - The Warrior: A balanced fighter who prefers melee attacks. It's equipped with a short sword, warrior boots, a small flask of cure, a throwing knife, and a Resurrection item.
 		{
 			id:"warrior",
-			heroClass:"Warrior",
-			goldNotes:"Gold ({ifCrossDoor}{then}{ifPayGold:1})",
+			heroClass:"Guerrero",
+			goldNotes:"Oro(G) ({ifCrossDoor}{then}{ifPayGold:1})",
 			tags:["importantStartingItem"],
 			skills:[
-				[ {skill:"ATK -1\nRNG 1"}, {skill:"Move\n-3"} ],
-				[ {skill:"DEF -3"}, {skill:"Move\n-2", tags:["losable"]} ],
-				[ {skill:"Gain HP\n-5", cost:"pay 1G", tags:["losable"] }, {skill:"ATK -3\nRNG 1", tags:["losable"] } ],
-				[ {skill:"ATK\nRNG 2", tags:["losable"]}, {skill:"Move"} ]
+				[ {skill:"ATK -1\nRNG 1"}, {skill:"MOV-3"} ],
+				[ {skill:"DEF -3"}, {skill:"MOV-2", tags:["losable"]} ],
+				[ {skill:"+ HP-5", cost:"-1G", tags:["losable"] }, {skill:"ATK -3\nRNG 1", tags:["losable"] } ],
+				[ {skill:"ATK\nRNG 2", tags:["losable"]}, {skill:"MOV"} ]
 			],
 			placeholders:{
 				familiarName:[
-					"Dog",
-					"Wolf",
-					"Bear"
+					"Perro",
+					"Lobo",
+					"Oso"
 				]
 			},
 			defense:[1,1,1,1],
@@ -94,20 +94,20 @@ function loadHeroModels() {
 		// [CODEX-Heroes] Class - The Wizard: A powerful mage that fights from the distance. It's equipped with lightning spells, a teleport spell, a magic shield, a healing spell, and a Fireball item.
 		{
 			id:"wizard",
-			heroClass:"Wizard",
-			goldNotes:"Gold ({ifCrossDoor}{then}{ifPayGold:1})",
+			heroClass:"Mago",
+			goldNotes:"Oro(G) ({ifCrossDoor}{then}{ifPayGold:1})",
 			tags:["weak"],
 			skills:[
-				[ {skill:"ATK -2\nRNG 2"}, {skill:"Move\n-3"} ],
-				[ {skill:"Move\n-1"}, {skill:"Move\n-3", tags:["losable"]} ],
+				[ {skill:"ATK -2\nRNG 2"}, {skill:"MOV-3"} ],
+				[ {skill:"MOV\n-1"}, {skill:"MOV-3", tags:["losable"]} ],
 				[ {skill:"DEF\n-2", tags:["losable"]}, {skill:"ATK -1\nRNG 3"} ],
-				[ {skill:"Gain HP\n-5", cost:"pay 1G"}, {skill:"ATK\nRNG 1", tags:["losable"]} ]
+				[ {skill:"+ HP-5", cost:"-1G"}, {skill:"ATK\nRNG 1", tags:["losable"]} ]
 			],
 			placeholders:{
 				familiarName:[
-					"Owl",
-					"Cat",
-					"Lizard"
+					"Búho",
+					"Gato",
+					"Lagarto"
 				]
 			},
 			defense:[1,1,1,1],
@@ -143,7 +143,7 @@ function loadHeroModels() {
 				// Level 0
 				{
 					skills:[
-						["ATK -1\nRNG 2","Move\n-3"]
+						["ATK -1\nRNG 2","MOV-3"]
 					]
 				},
 				// Level 1
@@ -160,19 +160,19 @@ function loadHeroModels() {
 		// [CODEX-Heroes] Class - The Dwarf: A strong fighter trained on swinging a huge war hammer. It's equipped with a war hammer, leather armor, and a Mead item.
 		{
 			id:"dwarf",
-			heroClass:"Dwarf",
-			goldNotes:"Gold ({ifCrossDoor}{then}{ifPayGold:1})",
+			heroClass:"Enano",
+			goldNotes:"Oro(G) ({ifCrossDoor}{then}{ifPayGold:1})",
 			skills:[
-				[ {skill:"ATK -1\nRNG 1"}, {skill:"Move\n-4"} ],
-				[ {skill:"DEF -2"}, {skill:"Move\n-3", tags:["losable"]} ],
-				[ {skill:"ATK -2\nALL 2", cost:"pay 1G", tags:["losable"]}, {skill:"DEF -3"} ],
-				[ {skill:"ATK -1\nRNG 2", cost:"pay 2G", tags:["losable"] }, {skill:"ATK\nRNG 1", cost:"pay 2G", tags:["losable"]} ]
+				[ {skill:"ATK -1\nRNG 1"}, {skill:"MOV-4"} ],
+				[ {skill:"DEF -2"}, {skill:"MOV-3", tags:["losable"]} ],
+				[ {skill:"ATK -2\nALL 2", cost:"-1G", tags:["losable"]}, {skill:"DEF -3"} ],
+				[ {skill:"ATK -1\nRNG 2", cost:"-2G", tags:["losable"] }, {skill:"ATK\nRNG 1", cost:"-2G", tags:["losable"]} ]
 			],
 			placeholders:{
 				familiarName:[
-					"Beaver",
-					"Mole",
-					"Hedgehog"
+					"Castor",
+					"Topo",
+					"Herizo"
 				]
 			},
 			defense:[1,1,1,1],
@@ -220,19 +220,19 @@ function loadHeroModels() {
 		// [CODEX-Heroes] Class - The Ranger: An archer that learns from the beasts. It's equipped with a bow and a Focus item.
 		{
 			id:"ranger",
-			heroClass:"Ranger",
-			goldNotes:"Gold ({ifCrossDoor}{then}{ifPayGold:1})",
+			heroClass:"Guardabosques",
+			goldNotes:"Oro(G) ({ifCrossDoor}{then}{ifPayGold:1})",
 			skills:[
-				[ {skill:"ATK -1\nRNG 1"}, {skill:"Move\n-3"} ],
-				[ {skill:"ATK -1\nRNG =2", tags:["losable"]}, {skill:"Copy\n-1", tags:["losable"]} ],
-				[ {skill:"Copy\n-1", tags:["losable"]}, {skill:"DEF -2"} ],
-				[ {skill:"ATK\nRNG 3", tags:["losable"]}, {skill:"Move", tags:["losable"]} ]
+				[ {skill:"ATK -1\nRNG 1"}, {skill:"MOV-3"} ],
+				[ {skill:"ATK -1\nRNG =2", tags:["losable"]}, {skill:"Copiar\n-1", tags:["losable"]} ],
+				[ {skill:"Copiar\n-1", tags:["losable"]}, {skill:"DEF -2"} ],
+				[ {skill:"ATK\nRNG 3", tags:["losable"]}, {skill:"MOV", tags:["losable"]} ]
 			],
 			placeholders:{
 				familiarName:[
-					"Falcon",
-					"Pidgeon",
-					"Snake"
+					"Halcón",
+					"Paloma",
+					"Serpiente"
 				]
 			},
 			defense:[1,1,1,1],
@@ -283,19 +283,19 @@ function loadHeroModels() {
 		// [CODEX-Heroes] Class - The Rogue: An agile thief that tricks enemies. It's equipped with a lasso, a throwing knife, and a Frag bomb item.
 		{
 			id:"rogue",
-			heroClass:"Rogue",
-			goldNotes:"Gold ({ifCrossDoor}{then}{ifPayGold:1})",
+			heroClass:"Ladrón",
+			goldNotes:"Oro(G) ({ifCrossDoor}{then}{ifPayGold:1})",
 			skills:[
-				[ {skill:"ATK -1\nRNG 1"}, {skill:"Move\n-2"} ],
+				[ {skill:"ATK -1\nRNG 1"}, {skill:"MOV-2"} ],
 				[ {skill:"DEF -3"}, {skill:"Lock\n-3", tags:["losable"]} ],
-				[ {skill:"DEF -2", tags:["losable"] }, {skill:"Move", tags:["losable"] } ],
+				[ {skill:"DEF -2", tags:["losable"] }, {skill:"MOV", tags:["losable"] } ],
 				[ {skill:"Lock\n-2", tags:["losable"]}, {skill:"ATK\nRNG 2", tags:["losable"]} ]
 			],
 			placeholders:{
 				familiarName:[
-					"Mouse",
-					"Crow",
-					"Raccoon"
+					"Ratón",
+					"Cuervo",
+					"Mapache"
 				]
 			},
 			defense:[1,1,1,1],
