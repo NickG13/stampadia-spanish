@@ -59,20 +59,20 @@ function loadPlaceholders() {
 			"Amante",
 		],
 		bossKey:[
-			"Rombo diamante", // Longest
-			"Llave calavera",
-			"Llave roja",
-			"Orbe invisible",
-			"Llave santa",
-			"Pergamino",
-			"Gema llameante",
-			"Llave perdida",
-			"Sello ruptura",
-			"Sello recuerdo",
-			"Obre trauma",
-			"Corazón helado",
+			"Llave Diamante", // Longest
+			"Llave Calavera",
+			"Llave Roja",
+			"Flauta Invisible",
+			"Llave Santa",
+			"Joya Perdida",
+			"Gema Llameante",
+			"Llave Perdida",
+			"Marca Rota",
+			"Marca Mágica",
+			"Esfera Helada",
+			"Marca Quemada",
 			"Gema espiritual",
-			"Sello olvidado",
+			"Vara Mágica",
 		],
 		placeName:[
 			"Monte", // Longest
