@@ -3,153 +3,153 @@
 function loadPlaceholders() {
 	return {
 		adventureHeader:[
-			"{nameLine} the {heroClass} in",
-			"The {heroClass} {nameLine} in"
+			"{nameLine} el {heroClass} en",
+			"El {heroClass} {nameLine} en"
 		],
 		villainName:[
-			"Blood Dragon", // Longest
-			"Dark Lord",
-			"Hydra",
-			"Chimera",
-			"Basilisk",
-			"Minotaur",
-			"King Goblin",
-			"Mists Queen",
-			"Butcher",
-			"Cyclop",
-			"Demon",
-			"Red Oni",
-			"Devil",
-			"Unnamed",
-			"Dark One",
-			"Destroyer",
-			"Souls Thief",
-			"Dark Lady",
-			"Fallen Angel",
-			"Mad Valkyrie",
-			"Cruel Gorgon",			
-			"Usurper",
+			"Dragón Rojo", // Longest
+			"Señor Oscuro",
+			"Hidra",
+			"Quimera",
+			"Basilisco",
+			"Minotauro",
+			"Rey Goblin",
+			"Reina Niebla",
+			"Carnicero",
+			"Cíclope",
+			"Demonio",
+			"Oni Rojo",
+			"Diablo",
+			"Sin Nombre",
+			"Oscuro",
+			"Destructor",
+			"Roba-almas",
+			"Dama Oscura",
+			"Ángel Caído",
+			"Valkiria",
+			"Gorgona",			
+			"Usurpador",
 		],
 		winningScene:[
-			"You are carried in triumph to the capital!", // Longest
-			"You did it!",
-			"You won!",
-			"You are a legend!",
-			"You are a hero!",
-			"You will always be remembered!",
+			"¡Te aclaman en camino a la capital!", // Longest
+			"¡Lo has conseguido!",
+			"¡Has ganado!",
+			"¡Eres una leyenda!",
+			"¡Eres un héroe!",
+			"¡Siempre serás recordado!",
 		],
 		goodGuyName:[
-			"Great Saviour", // Longest
-			"King",
-			"Prince",
-			"Princess",
-			"Sarge",
-			"Queen",
-			"Old Sage",
-			"Guardian",
-			"Cleric",
-			"Counsellor",
-			"Hermit",
+			"Gran Salvador", // Longest
+			"Rey",
+			"Príncipe",
+			"Princesa",
+			"Sargento",
+			"Reina",
+			"Sabio",
+			"Guardián",
+			"Clérigo",
+			"Consejero",
+			"Ermitaño",
 		],
 		goodGuyRelativeName:[
-			"Friend", // Longest
-			"Wife",
-			"Son",
-			"Child",
-			"Lover",
+			"Amigo", // Longest
+			"Mujer",
+			"Hijo",
+			"Niño",
+			"Amante",
 		],
 		bossKey:[
-			"Diamond Rhombus", // Longest
-			"Skull Key",
-			"Bloody Key",
-			"Invisibility Orb",
-			"Sacred Key",
-			"Discovery Scroll",
-			"Flaming Gem",
-			"Lost Key",
-			"Rupture Seal",
-			"Recall Seal",
-			"Trauma Orb",
-			"Frozen Heart",
-			"Spirit Stone",
-			"Forgotten Stamp",
+			"Rombo diamante", // Longest
+			"Llave calavera",
+			"Llave roja",
+			"Orbe invisible",
+			"Llave santa",
+			"Pergamino",
+			"Gema llameante",
+			"Llave perdida",
+			"Sello ruptura",
+			"Sello recuerdo",
+			"Obre trauma",
+			"Corazón helado",
+			"Gema espiritual",
+			"Sello olvidado",
 		],
 		placeName:[
-			"Mountain", // Longest
-			"Island",
-			"Valley",
-			"Temple",
-			"Land",
-			"City",
+			"Montaña", // Longest
+			"Isla",
+			"Valle",
+			"Templo",
+			"Tierra",
+			"Ciudad",
 			"Capital",
-			"Lake",
-			"Forest",
-			"Abbey",
-			"Swamp",
-			"Catacomb",
-			"Borough",
-			"Mill",
-			"Desert",
-			"Shore",
-			"Hill",
-			"Woods",
-			"Village",
-			"Castle",
-			"Cliff",
+			"Lago",
+			"Bosque",
+			"Abadía",
+			"Pantano",
+			"Sépulcro",
+			"Barrio",
+			"Molino",
+			"Desierto",
+			"Playa",
+			"Colina",
+			"Arboleda",
+			"Aldea",
+			"Castillo",
+			"Risco",
 		],
 		explorerName:[
-			"Archaeologist", // Longest
-			"Explorer",
-			"Spy",
-			"Hunter",
-			"Scholar",
+			"Arqueólogo", // Longest
+			"Explorador",
+			"Espía",
+			"Cazador",
+			"Erudito",
 			"Detective",
-			"Recruit",
-			"Wanderer",
-			"Scribe",
-			"Chronicler",
+			"Recluta",
+			"Vagabundo",
+			"Escriba",
+			"Cronista",
 		],
 		documentName:[
-			"Inscription", // Longest
-			"Scroll",
-			"Document",
-			"Message",
-			"Register",
-			"Engraving",
+			"Inscripción", // Longest
+			"Pergamino",
+			"Documento",
+			"Mensaje",
+			"Registro",
+			"Grabado",
 		],
 		victimName:[
-			"Adventurer", // Longest
-			"Kid",
-			"Girl",
-			"Boy",
-			"Man",
-			"Woman",
-			"Elder"
+			"Aventurero", // Longest
+			"Niño",
+			"Niña",
+			"Chico",
+			"Hombre",
+			"Mujer",
+			"Anciano"
 		],
 		epicWeapon:[
-			"Black Shythe", // Longest
-			"Void Cutter",
-			"Bloody Claw",
-			"Black Blade"
+			"Hoz negra", // Longest
+			"Hoja abismal",
+			"Garra roja",
+			"Espada negra"
 		],
 		epicWeaponPart:[
-			"Shard", // Longest
-			"Part",
-			"Piece"
+			"Trozo", // Longest
+			"Parte",
+			"Pieza"
 		],
 		madScientistName:[
-			"Necromancer", // Longest
-			"Scientist",
+			"Nigromante", // Longest
+			"Científico",
 			"Doctor",
 		],
 		lowerSoldierName:[
-			"Captain", // Longest
-			"Private",
-			"Spy",
+			"Capitán", // Longest
+			"Soldado",
+			"Espía",
 		],
 		higherSoldierName:[
-			"Sergeant",  // Longest
-			"Major",
+			"Sargento",  // Longest
+			"Mayor",
 		],
 	};
 }
