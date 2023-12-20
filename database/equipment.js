@@ -89,7 +89,7 @@ function loadEquipment() {
 		// [CODEX-Stuff] Equipment - Mead: Discard one die, set the other one to 6.
 		{
 			id:"mead",
-			label:"Mead",
+			label:"Hidromiel",
 			action:"{ifAfterHeroRollInFight}{then}{discardAnyDie:1}{and}{setDieTo:1,6}"
 		},
 		// [CODEX-Stuff] Equipment - Epic Weapon: A weapon with many names. Deal 2 damage to all enemies in range 4.
