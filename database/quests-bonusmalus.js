@@ -25,51 +25,51 @@ function loadQuestsBonus() {
 			id:"[CODEX-Events] Bonus - The Random Item: A random bonus item.",
 			minRooms:2,
 			steps:[[{id:"spawn",labels:["Item"],atPercentage:99,roomDescriptions:[
-				[ "{ifMoveOn:item}{then}{hide}You found {randomGoodLoot}, {markItem:item}" ]
+				[ "{ifMoveOn:item}{then}{hide}Hallado {randomGoodLoot}, {markItem:item}" ]
 			],items:[{genericItem:"item"}]}]]
 		},
 
 		{
 			id:"[CODEX-Events] Bonus - The NPC: Learn about the Stampadia lore by Stampadians.",
 			minRooms:2,			
-			steps:[[{id:"spawn",labels:["Guy","Talking","Chat","Chatting"],atPercentage:99,roomDescriptions:[
+			steps:[[{id:"spawn",labels:["Tipo","Hablando","Charla","Charlando"],atPercentage:99,roomDescriptions:[
 
 				// The Travellers, who has interesting unanswered questions about Stampadia...
-				[ "{ifMoveOn:item}{then}Traveller: \"Are the wall of this dungeon moving?\"" ],
-				[ "{ifMoveOn:item}{then}Traveller: \"Is this world just... someone's dream?\"" ],
-				[ "{ifMoveOn:item}{then}Traveller: \"Is the Monk I meet around ever the same?\"" ],
-				[ "{ifMoveOn:item}{then}Traveller: \"Is this the first time I enter this place?\"" ],
+				[ "{ifMoveOn:item}{then}Viajero: \"¿Se están moviendo las paredes?\"" ],
+				[ "{ifMoveOn:item}{then}Viajero: \"¿Es este mundo... solo un sueño?\"" ],
+				[ "{ifMoveOn:item}{then}Viajero: \"¿Es ese Monje siempre el mismo?\"" ],
+				[ "{ifMoveOn:item}{then}Viajero: \"¿Es mi primera vez aquí?\"" ],
 
 				// The Ghosts, who gives cryptic tips on gameplay...
-				[ "{ifMoveOn:item}{then}Ghost: \"You don't have to use both of them.\"" ],
-				[ "{ifMoveOn:item}{then}Ghost: \"What you see is not always what you get.\"" ],
-				[ "{ifMoveOn:item}{then}Ghost: \"Sometimes looking back is not a waste of money.\"" ],
-				[ "{ifMoveOn:item}{then}Ghost: \"The second time is always easier.\"" ],
-				[ "{ifMoveOn:item}{then}Ghost: \"Time is money. Make sure to spend it well.\"" ],
+				[ "{ifMoveOn:item}{then}Fantasma: \"No necesitas usar ambos.\"" ],
+				[ "{ifMoveOn:item}{then}Fantasma: \"Lo que ves no es siempre lo que obtienes.\"" ],
+				[ "{ifMoveOn:item}{then}Fantasma: \"Mirar atrás no siempre es perder el tiempo.\"" ],
+				[ "{ifMoveOn:item}{then}Fantasma: \"La segunda vez es más fácil.\"" ],
+				[ "{ifMoveOn:item}{then}Fantasma: \"El tiempo es oro. Úsalo bien.\"" ],
 
 				// The Monks, who are mapping all the dungeons...
-				[ "{ifMoveOn:item}{then}Monk: \"Excuse me, where the exit is located? Thanks!\", {markItem:item}" ],
-				[ "{ifMoveOn:item}{then}Monk: \"Excuse me, what is your name? Thanks!\", {markItem:item}" ],
-				[ "{ifMoveOn:item}{then}Monk: \"Excuse me, was the previous room squared? Thanks!\", {markItem:item}" ],
-				[ "{ifMoveOn:item}{then}Monk: \"Excuse me, do you know the {goodGuyName}? Thanks!\", {markItem:item}" ],
-				[ "{ifMoveOn:item}{then}Monk: \"Excuse me, are you a {heroClass}? Thanks!\", {markItem:item}" ],
-				[ "{ifMoveOn:item}{then}Monk: \"Excuse me, is the {villainName} here? Thanks!\", {markItem:item}" ],
-				[ "{ifMoveOn:item}{then}Monk: \"Excuse me, are we at the {placeName}? Thanks!\", {markItem:item}" ],
+				[ "{ifMoveOn:item}{then}Monje: \"Disculpe, ¿dónde está la salida?\", {markItem:item}" ],
+				[ "{ifMoveOn:item}{then}Monje: \"Disculpe, ¿cuál es su nombre?\", {markItem:item}" ],
+				[ "{ifMoveOn:item}{then}Monje: \"Disculpe, ¿La sala anterior era cuadrada?\", {markItem:item}" ],
+				[ "{ifMoveOn:item}{then}Monje: \"Disculpe, ¿conoce al {goodGuyName}?\", {markItem:item}" ],
+				[ "{ifMoveOn:item}{then}Monje: \"Disculpe, ¿eres un {heroClass}?\", {markItem:item}" ],
+				[ "{ifMoveOn:item}{then}Monje: \"Disculpe, ¿está el {villainName} aquí?\", {markItem:item}" ],
+				[ "{ifMoveOn:item}{then}Monje: \"Disculpe, ¿estamos en el {placeName}?\", {markItem:item}" ],
 
 				// The Carpenters, who are looking for a strange machine to fix...
-				[ "{ifMoveOn:item}{then}Carpenter: \"Someone here asked for my help...\"" ],
-				[ "{ifMoveOn:item}{then}Carpenter: \"Where is the machine I've to fix?\"" ],
-				[ "{ifMoveOn:item}{then}Carpenter: \"Did you find any spare parts lying around?\"" ],
-				[ "{ifMoveOn:item}{then}Carpenter: \"Damn... is the ink already out?\"" ],
-				[ "{ifMoveOn:item}{then}Carpenter: \"They will have to pay me well for this job!\"" ],
+				[ "{ifMoveOn:item}{then}Carpintero: \"Alguien pidió mi ayuda...\"" ],
+				[ "{ifMoveOn:item}{then}Carpintero: \"¿Dónde está la máquina a reparar?\"" ],
+				[ "{ifMoveOn:item}{then}Carpintero: \"¿Has visto algún repuesto por ahí?\"" ],
+				[ "{ifMoveOn:item}{then}Carpintero: \"Mierda... ¿ya se ha acabado la tinta?\"" ],
+				[ "{ifMoveOn:item}{then}Carpintero: \"¡Espero que paguen bien por este trabajo!\"" ],
 
 				// Sergio, the mysterious wandering philosopher...
-				[ "{ifMoveOn:item}{then}Sergio: \"And so I'm here. A philosopher in a world of monsters.\""],
-				[ "{ifMoveOn:item}{then}Sergio: \"Is this really the best possible world?\""],
-				[ "{ifMoveOn:item}{then}Sergio: \"I spent my life spent inventing such a weird world...\""],
-				[ "{ifMoveOn:item}{then}Sergio: \"Maybe we need a new world. With a lot of self-irony.\""],
-				[ "{ifMoveOn:item}{then}Sergio: \"Is this really the best possible world?\""],
-				[ "{ifMoveOn:item}{then}Sergio: \"Dignity, of course. And some good self-irony.\""],
+				[ "{ifMoveOn:item}{then}Sergio: \"Aquí estoy, un filósofo en un mundo de monstruos.\""],
+				[ "{ifMoveOn:item}{then}Sergio: \"¿Realmente vivimos en el mejor mundo posible?\""],
+				[ "{ifMoveOn:item}{then}Sergio: \"He dedicado mi vida a inventar un mundo tan extraño...\""],
+				[ "{ifMoveOn:item}{then}Sergio: \"Quizás necesitemos un mundo nuevo, con más humor.\""],
+				[ "{ifMoveOn:item}{then}Sergio: \"¿Es este el mejor mundo posible?\""],
+				[ "{ifMoveOn:item}{then}Sergio: \"Dignidad, por supuesto, pero con un buen humor.\""],
 
 			],items:[{genericItem:"item"}]}]]
 		},
@@ -79,10 +79,10 @@ function loadQuestsBonus() {
 			minRooms:4,
 			steps:[[
 				// isExclusive reason: Enemies behind one of the two teleports may lock the player.
-				{id:"roomA",isExclusive:true,labels:["Near Teleport","First Teleport"],atPercentage:1,roomDescriptions:[
+				{id:"roomA",isExclusive:true,labels:["TP cerca","Primer TP"],atPercentage:1,roomDescriptions:[
 					[ "{ifMoveOn:item1}{then}{randomTeleportation}{hide}{teleportToRoom:roomB}" ]
 				],items:[{genericItem:"item1"}]},
-				{id:"roomB",isExclusive:true,labels:["Far Teleport","Last Teleport"],atPercentage:99,roomDescriptions:[
+				{id:"roomB",isExclusive:true,labels:["TP lejos","Último TP"],atPercentage:99,roomDescriptions:[
 					[ "{ifMoveOn:item2}{then}{randomTeleportation}{hide}{teleportToRoom:roomA}" ]
 				],items:[{genericItem:"item2"}]}
 			]]
@@ -92,7 +92,7 @@ function loadQuestsBonus() {
 			id:"[CODEX-Events] Bonus - The Shop: Pay gold or other valuables for useful items.",
 			minRooms:2,
 			steps:[[
-				{id:"spawn",labels:["Shop","Shopping","Sale"],atPercentage:99,roomDescriptions:SHOP
+				{id:"spawn",labels:["Tienda","Compra","Venta"],atPercentage:99,roomDescriptions:SHOP
 				,items:[{genericItem:"item"}]}
 			]]
 		},
@@ -101,8 +101,8 @@ function loadQuestsBonus() {
 			id:"[CODEX-Events] Bonus - The Saint: They will help you when you're in danger.",
 			minRooms:4,
 			steps:[[
-				{id:"roomA",labels:["Sacred"],atPercentage:{from:50,to:99},roomDescriptions:[
-					[ "{ifMoveOn:saint}{and}{ifHpLeft=:0}{then}Saint: {randomSaint}, {gainHp:2}, {markItem:saint}" ]
+				{id:"roomA",labels:["Sagrada"],atPercentage:{from:50,to:99},roomDescriptions:[
+					[ "{ifMoveOn:saint}{and}{ifHpLeft=:0}{then}Santo: {randomSaint}, {gainHp:2}, {markItem:saint}" ]
 				],items:[{genericItem:"saint"}]}
 			]]
 		},
@@ -112,18 +112,18 @@ function loadQuestsBonus() {
 			minRooms:2,
 			steps:[
 				[
-					{id:"roomA",labels:["Rotten","Tree"],atPercentage:{from:1,to:99},roomDescriptions:[
+					{id:"roomA",labels:["Podrido","Árbol"],atPercentage:{from:1,to:99},roomDescriptions:[
 						[
 							"{randomMagicTree}",
-							"{ifMoveOn:tree}{and}{ifGoldLeft<half}{then}You pick a Fruit, {randomGoodReward}, {markItem:tree}"
+							"{ifMoveOn:tree}{and}{ifGoldLeft<half}{then}Coges una fruta, {randomGoodReward}, {markItem:tree}"
 						]
 					],items:[{genericItem:"tree"}]}
 				],
 				[
-					{id:"roomA",labels:["Blooming","Tree"],atPercentage:{from:1,to:99},roomDescriptions:[
+					{id:"roomA",labels:["Florecido","Árbol"],atPercentage:{from:1,to:99},roomDescriptions:[
 						[
 							"{randomMagicTree}",
-							"{ifMoveOn:tree}{and}{ifGoldLeft>half}{then}You pick a Fruit, {randomGoodReward}, {markItem:tree}"
+							"{ifMoveOn:tree}{and}{ifGoldLeft>half}{then}Coges una fruta, {randomGoodReward}, {markItem:tree}"
 						]
 					],items:[{genericItem:"tree"}]}
 				],
@@ -135,9 +135,9 @@ function loadQuestsBonus() {
 			minRooms:2,
 			steps:[
 				[
-					{id:"equip-mirror-room",labels:["Reflection","Twin"],atPercentage:99,equipment:[{id:"mirror"}],roomDescriptions:[
+					{id:"equip-mirror-room",labels:["Reflejo","Gemelo"],atPercentage:99,equipment:[{id:"mirror"}],roomDescriptions:[
 						[
-							"{ifMoveOn:mirror}{then}You see your reflection on a large mirror, {markItem:mirror}, {getEquip:equip-mirror}"
+							"{ifMoveOn:mirror}{then}Ves tu reflejo en un gran espejo, {markItem:mirror}, {getEquip:equip-mirror}"
 						]
 					],items:[{genericItem:"mirror"}]}
 				]
@@ -150,10 +150,10 @@ function loadQuestsBonus() {
 			minRooms:2,
 			steps:[
 				[
-					{id:"roomA",labels:["Lucky"],atPercentage:99,roomDescriptions:[
+					{id:"roomA",labels:["Afortunado"],atPercentage:99,roomDescriptions:[
 						[
-							"{ifMoveOn:item}{and}{ifLoseKeyword:luck}{then}You found{hide}{randomGoodLoot}, {markItem:item}",
-							"{ifMoveOn:item}{and}{ifNotKeyword:luck}{then}You found a clover, {getKeyword:luck}, {markItem:item}"
+							"{ifMoveOn:item}{and}{ifLoseKeyword:luck}{then}Encuentras{hide}{randomGoodLoot}, {markItem:item}",
+							"{ifMoveOn:item}{and}{ifNotKeyword:luck}{then}Encuentras un trébol, {getKeyword:luck}, {markItem:item}"
 						]
 					],items:[{genericItem:"item"}]}
 				]
@@ -165,30 +165,30 @@ function loadQuestsBonus() {
 			minRooms:1,
 			steps:[
 				[
-					{id:"clownRoom",labels:["Jumping","Circus"],atPercentage:99,equipment:[{id:"backflip"}],roomDescriptions:[
+					{id:"clownRoom",labels:["Saltando","Circo"],atPercentage:99,equipment:[{id:"backflip"}],roomDescriptions:[
 						[
-							"{ifMoveOn:clown}{and}{ifPayGold:5}{then}Clown: \"Nice jump, {heroClass}!\", {getEquip:equip-backflip}, {markItem:clown}"
+							"{ifMoveOn:clown}{and}{ifPayGold:5}{then}Payaso: \"¡Buen salto, {heroClass}!\", {getEquip:equip-backflip}, {markItem:clown}"
 						]
 					],items:[{genericItem:"clown"}]}
 				],
 				[
-					{id:"clownRoom",labels:["Dancing","Music","Circus"],atPercentage:99,equipment:[{id:"spin"}],roomDescriptions:[
+					{id:"clownRoom",labels:["Bailando","Música","Circo"],atPercentage:99,equipment:[{id:"spin"}],roomDescriptions:[
 						[
-							"{ifMoveOn:clown}{and}{ifPayGold:5}{then}Clown: \"Nice dancing, {heroClass}!\", {getEquip:equip-spin}, {markItem:clown}"
+							"{ifMoveOn:clown}{and}{ifPayGold:5}{then}Payaso: \"¡Buen baile, {heroClass}!\", {getEquip:equip-spin}, {markItem:clown}"
 						]
 					],items:[{genericItem:"clown"}]}
 				],
 				[
 					{id:"clownRoom",labels:["Stretching","Circus"],atPercentage:99,equipment:[{id:"lunge"}],roomDescriptions:[
 						[
-							"{ifMoveOn:clown}{and}{ifPayGold:5}{then}Clown: \"Nice stretch, {heroClass}!\", {getEquip:equip-lunge}, {markItem:clown}"
+							"{ifMoveOn:clown}{and}{ifPayGold:5}{then}Payaso: \"¡Buen estiramiento, {heroClass}!\", {getEquip:equip-lunge}, {markItem:clown}"
 						]
 					],items:[{genericItem:"clown"}]}
 				],
 				[
 					{id:"clownRoom",labels:["Sweeping","Circus"],atPercentage:99,equipment:[{id:"sweep"}],roomDescriptions:[
 						[
-							"{ifMoveOn:clown}{and}{ifPayGold:5}{then}Clown: \"Nice sweep, {heroClass}!\", {getEquip:equip-sweep}, {markItem:clown}"
+							"{ifMoveOn:clown}{and}{ifPayGold:5}{then}Payaso: \"Buen barrido, {heroClass}!\", {getEquip:equip-sweep}, {markItem:clown}"
 						]
 					],items:[{genericItem:"clown"}]}
 				]
@@ -200,13 +200,13 @@ function loadQuestsBonus() {
 			minRooms:1,
 			steps:[
 				// [CODEX-Stuff] Beast - The Bear: Makes you braver.
-				{ labels:["Bear","Hungry"], intro:"A giant roaring bear stares at you with a hungry gaze.", action:"It was a grueling fight", effect:"{applyModifierOnRoomMarked:scared.enemy,biteRoom}" },
+				{ labels:["Bear","Hungry"], intro:"Un oso gigante y rugiente te mira, hambriento.", action:"Ha sido intenso", effect:"{applyModifierOnRoomMarked:scared.enemy,biteRoom}" },
 				// [CODEX-Stuff] Beast - The Porcupine: Gives you thorns to cripple your enemies.
-				{ labels:["Porcupine","Spikes"], intro:"A giant porcupine seems to have a particular interest in you.", action:"Its thorns remain on your body", effect:"{applyModifierOnRoomMarked:crippled.enemy,biteRoom}" },
+				{ labels:["Porcupine","Spikes"], intro:"Un puercoespín gigante te mira con interés.", action:"Se clavan algunas espinas", effect:"{applyModifierOnRoomMarked:crippled.enemy,biteRoom}" },
 				// [CODEX-Stuff] Beast - The Moth: His spores can blind your enemies.
-				{ labels:["Fly","Spores"], intro:"A huge winged moth is spreading spores all over the room.", action:"The spores stick to your body", effect:"{applyModifierOnRoomMarked:blind.enemy,biteRoom}" },
+				{ labels:["Fly","Spores"], intro:"Una gran polilla esparce esporas por toda la habitación.", action:"Quedas impregnado de esporas", effect:"{applyModifierOnRoomMarked:blind.enemy,biteRoom}" },
 				// [CODEX-Stuff] Beast - The Whirlwind: His colors can stun your enemies.
-				{ labels:["Colors","Whirlwind"], intro:"A whirlwind of light seems to engulf the colors from every corner of the room.", action:"Colors explode on you", effect:"{applyModifierOnRoomMarked:stunned.enemy,biteRoom}" },
+				{ labels:["Colors","Whirlwind"], intro:"Un torbellino de luz se traga los colores de la habitación.", action:"Estalla en tu cara", effect:"{applyModifierOnRoomMarked:stunned.enemy,biteRoom}" },
 			].map(enemy=>
 				[
 					{
@@ -287,10 +287,10 @@ function loadQuestsMalus() {
 					[ "{ifMoveOn:item1}{then}{randomTeleportation}{hide}{markItem:item1}, {teleportToRoom:trap}" ]
 				],items:[{genericItem:"item1"}]},
 				{id:"trap",labels:["Surprise Attack"],atPercentage:99,roomDescriptions:[
-					[ "\"You fell in my trap!\"" ],
-					[ "\"What are you doing here?!\"" ],
-					[ "\"Hey... YOU!\"" ],
-					[ "\"Well well... What we have here?\"" ],
+					[ "\"Caíste en mi trampa\"" ],
+					[ "\"¡¿Qué haces aquí?!\"" ],
+					[ "\"¡Oye... TÚ!\"" ],
+					[ "\"Vaya, vaya, ¿qué tenemos aquí?\"" ],
 				],items:[{id:"enemy",level:2}]}
 			]]
 		},
@@ -333,16 +333,16 @@ function loadQuestsMalus() {
 				[
 					{id:"roomA",labels:["Bomb","Clicking"],atPercentage:99,roomDescriptions:[
 						[
-							"{ifEnterRoom}{and}{ifRoomIsNotMarked:roomA}{and}{ifGoldLeft<half}{then}You triggered a trap, {randomBadReward}, {markRoom:roomA}",
-							"{ifEnterRoom}{and}{ifRoomIsNotMarked:roomA}{and}{ifGoldLeft>half}{then}You managed to defuse a trap, {markRoom:roomA}"
+							"{ifEnterRoom}{and}{ifRoomIsNotMarked:roomA}{and}{ifGoldLeft<half}{then}Activaste una trampa, {randomBadReward}, {markRoom:roomA}",
+							"{ifEnterRoom}{and}{ifRoomIsNotMarked:roomA}{and}{ifGoldLeft>half}{then}Desactivaste una trampa, {markRoom:roomA}"
 						]
 					]}
 				],
 				[
 					{id:"roomA",labels:["Bomb","Clicking"],atPercentage:99,roomDescriptions:[
 						[
-							"{ifEnterRoom}{and}{ifRoomIsNotMarked:roomA}{and}{ifGoldLeft>half}{then}You triggered a trap, {randomBadReward}, {markRoom:roomA}",
-							"{ifEnterRoom}{and}{ifRoomIsNotMarked:roomA}{and}{ifGoldLeft<half}{then}Someone triggered a trap, {markRoom:roomA}"
+							"{ifEnterRoom}{and}{ifRoomIsNotMarked:roomA}{and}{ifGoldLeft>half}{then}Activaste una trampa, {randomBadReward}, {markRoom:roomA}",
+							"{ifEnterRoom}{and}{ifRoomIsNotMarked:roomA}{and}{ifGoldLeft<half}{then}Alguien activó la trampa, {markRoom:roomA}"
 						]
 					]}
 				]
@@ -356,7 +356,7 @@ function loadQuestsMalus() {
 				[
 					{id:"witchRoom",labels:["Witch"],items:[{genericItem:"witch"}],atPercentage:{from:10,to:40},roomDescriptions:[
 						[
-							"{ifMoveOn:witch}{and}{ifPayGold:3}{then}Witch: \"Thank you, {heroClass}! Heh heh...\", {markRoom:witchRoom}, {markItem:witch}"
+							"{ifMoveOn:witch}{and}{ifPayGold:3}{then}Bruja: \"Gracias, {heroClass}! Je je...\", {markRoom:witchRoom}, {markItem:witch}"
 						]
 					]},
 					{id:"cursedRoom",labels:["Witched"],atPercentage:99,roomDescriptions:[
@@ -375,7 +375,7 @@ function loadQuestsMalus() {
 				[
 					{id:"mercenaryRoom",labels:["Assassin","Killer"],items:[{genericItem:"mercenary"}],atPercentage:10,roomDescriptions:[
 						[
-							"{ifMoveOn:mercenary}{and}{ifPayGold:5}{then}Mercenary: {randomOk}, {markRoom:mercenaryRoom}, {markItem:mercenary}"
+							"{ifMoveOn:mercenary}{and}{ifPayGold:5}{then}Sicario: {randomOk}, {markRoom:mercenaryRoom}, {markItem:mercenary}"
 						]
 					]},
 					{id:"enemyRoom",labels:["Target","Murdered"],atPercentage:99,roomDescriptions:[
@@ -397,7 +397,7 @@ function loadQuestsMalus() {
 					{id:"roomA",labels:["Unlucky"],atPercentage:99,roomDescriptions:[
 						[
 							"{ifEnterRoom}{and}{ifRoomIsNotMarked:roomA}{and}{ifKeyword:unluck}{then}{randomBadReward}, {loseKeyword:unluck}, {markRoom:roomA}",
-							"{ifEnterRoom}{and}{ifRoomIsNotMarked:roomA}{then}You found a small horn, {getKeyword:unluck}, {markRoom:roomA}"
+							"{ifEnterRoom}{and}{ifRoomIsNotMarked:roomA}{then}Encuentras un cuernito, {getKeyword:unluck}, {markRoom:roomA}"
 						]
 					]}
 				]
@@ -409,13 +409,13 @@ function loadQuestsMalus() {
 			minRooms:1,
 			steps:[
 				// [CODEX-Stuff] Beast - The Scorpion: It can stun you permanently.
-				{ labels:["Scorpion","Tail"], intro:"A huge distracted scorpion is slowly swinging its tail.", action:"With one last swipe the tail stings you", effect:"{applyModifierOnRoomMarked:stunned.hero,biteRoom}" },
+				{ labels:["Scorpion","Tail"], intro:"Un gran escorpión balancea su cola, distraído.", action:"Con un último golpe, la cola te pica.", effect:"{applyModifierOnRoomMarked:stunned.hero,biteRoom}" },
 				// [CODEX-Stuff] Beast - The Light Ball: It can blind you permanently.
-				{ labels:["Light","Floater"], intro:"A ball of light floats slowly around the room, illuminating its walls.", action:"It explodes with a dazzling light", effect:"{applyModifierOnRoomMarked:blind.hero,biteRoom}" },
+				{ labels:["Light","Floater"], intro:"Un orbe de luz flota en medio de la habitación, iluminándolo todo.", action:"Explota con luz cegadora", effect:"{applyModifierOnRoomMarked:blind.hero,biteRoom}" },
 				// [CODEX-Stuff] Beast - The Bat: It can scare you permanently.
-				{ labels:["Bat","Hanging"], intro:"A giant bat wrapped in its own wings hangs silently from the ceiling.", action:"It has been an horrific battle", effect:"{applyModifierOnRoomMarked:scared.hero,biteRoom}" },
+				{ labels:["Bat","Hanging"], intro:"Murciélago gigante envuelto en sus alas cuelga del techo en silencio.", action:"Ha sido horripilante", effect:"{applyModifierOnRoomMarked:scared.hero,biteRoom}" },
 				// [CODEX-Stuff] Beast - The Snake: It can poison you permanently.
-				{ labels:["Coil","Snake"], intro:"A huge coiled snake is staring at you hissing.", action:"The dying snake bites you", effect:"{applyModifierOnRoomMarked:crippled.hero,biteRoom}" },
+				{ labels:["Coil","Snake"], intro:"Una serpiente gigante te mira, siseando.", action:"Te acaba mordiendo", effect:"{applyModifierOnRoomMarked:crippled.hero,biteRoom}" },
 			].map(enemy=>
 				[
 					{
