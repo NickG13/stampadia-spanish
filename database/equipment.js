@@ -5,19 +5,19 @@ function loadEquipment() {
 		// [CODEX-Stuff] Equipment - Resurrection: Pay gold to resurrect once.
 		{
 			id:"resurrection",
-			label:"Resurrection",
+			label:"Revivir",
 			action:"{ifHeroDied}{and}{ifPayGold:2}{then}{gainFullHp}, {moveOnStairs}"
 		},
 		// [CODEX-Stuff] Equipment - Fireball: Inflict 2 damage.
 		{
 			id:"fireball",
-			label:"Fireball",
+			label:"Llamarada",
 			action:"{ifAfterHeroRollInFight}{then}{fightingEnemyLoseHp:1,0,2}"
 		},
 		// [CODEX-Stuff] Equipment - Taunt: Sacrifice XPs to weaken an enemy attack.
 		{
 			id:"taunt",
-			label:"Taunt",
+			label:"Provocar",
 			action:"{ifAfterEnemyRollInFight}{and}{ifPayXp:1}{then}{discardAnyDie:1}"
 		},
 		// [CODEX-Stuff] Equipment - Dash: Sacrifice XPs to skip the enemy turn.
@@ -29,19 +29,19 @@ function loadEquipment() {
 		// [CODEX-Stuff] Equipment - Rage: Sacrifice XPs to strike a critical hit.
 		{
 			id:"rage",
-			label:"Rage",
+			label:"Furia",
 			action:"{ifAfterHeroRollInFight}{and}{ifPayXp:2}{then}{setDieTo:1,6}"
 		},
 		// [CODEX-Stuff] Equipment - Tactic: Sacrifice XPs to strike a two strong hits.
 		{
 			id:"tactic",
-			label:"Tactic",
+			label:"Táctica",
 			action:"{ifAfterHeroRollInFight}{and}{ifPayXp:2}{then}{setDieTo:2,5}"
 		},
 		// [CODEX-Stuff] Equipment - Mirror: Teleport back to the mirror room.
 		{
 			id:"mirror",
-			label:"Small mirror",
+			label:"Mini espejo",
 			action:"{ifAfterEnemyRollInFight}{then}{teleportToRoom:equip-mirror-room}"
 		},
 		// [CODEX-Stuff] Test - Bravery: Skip a turn for gold.
@@ -71,19 +71,19 @@ function loadEquipment() {
 		// [CODEX-Stuff] Equipment - Spin: Play dices in reverse order.
 		{
 			id:"spin",
-			label:"Spin",
+			label:"Girar",
 			action:"{ifAfterHeroRollInFight}{and}{ifPayGold:2}{then}{playLowerDieFirst}"
 		},
 		// [CODEX-Stuff] Equipment - Lunge: Place dice on the same column.
 		{
 			id:"lunge",
-			label:"Lunge",
+			label:"Estocada",
 			action:"{ifAfterHeroRollInFight}{and}{ifPayGold:2}{then}{placeDiceInSameColumn}"
 		},
 		// [CODEX-Stuff] Equipment - Sweep: Place dice on the same row.
 		{
 			id:"sweep",
-			label:"Sweep",
+			label:"Barrido",
 			action:"{ifAfterHeroRollInFight}{and}{ifPayGold:2}{then}{placeDiceInSameRow}"
 		},
 		// [CODEX-Stuff] Equipment - Mead: Discard one die, set the other one to 6.
@@ -101,19 +101,19 @@ function loadEquipment() {
 		// [CODEX-Stuff] Equipment - Book: Lose 1 HP, deal 1 damage.
 		{
 			id:"book",
-			label:"Book",
+			label:"Libro",
 			action:"{ifAfterHeroRollInFight}{and}{loseHp:1}{then}{fightingEnemyLoseHp:1,1,2}"
 		},
 		// [CODEX-Stuff] Equipment - Apple: Gain 1/2 max HP.
 		{
 			id:"apple",
-			label:"Apple",
+			label:"Manzana",
 			action:"{ifBeforeHeroRollInFight}{then}{gainHalfHp}"
 		},
 		// [CODEX-Stuff] Equipment - Invisibility: For the next 3 enemy turns, discard all dice less than 6.
 		{
 			id:"invisibility",
-			label:"Invisibility",
+			label:"Invisibilidad",
 			action:"{ifNextEnemyRolls:3}{then}{discardAllDie<=:5}"
 		},
 		// [CODEX-Stuff] Equipment - Focus: Pay 2G and sum 2 dice values.
@@ -125,19 +125,19 @@ function loadEquipment() {
 		// [CODEX-Stuff] Equipment - Grenade: Perform an ATK action by the current room size.
 		{
 			id:"grenade",
-			label:"Grenade",
+			label:"Granada",
 			action:"{ifAfterHeroRollInFight}{then}{performByRoomSize:ATK}"
 		},
 		// [CODEX-Stuff] Equipment - Smoke: Perform a MOVE action by the current room size.
 		{
 			id:"smoke",
-			label:"Smoke",
+			label:"Humo",
 			action:"{ifAfterHeroRollInFight}{then}{performByRoomSize:Move}"
 		},
 		// [CODEX-Stuff] Equipment - Sonic: Perform a DEF action by the current room size.
 		{
 			id:"sonic",
-			label:"Sonic",
+			label:"Sónico",
 			action:"{ifAfterHeroRollInFight}{then}{performByRoomSize:DEF}"
 		},
 		// [CODEX-Stuff] Equipment - Frag: A fragmentation bomb that damages 2 nearby enemies when getting damage.
@@ -149,25 +149,25 @@ function loadEquipment() {
 		// [CODEX-Stuff] Equipment - Small die: Perform 1 free action with activation power 4.
 		{
 			id:"smallDie",
-			label:"Small die",
+			label:"Mini dado",
 			action:"{ifAfterHeroRollInFight}{then}{performFreeActionWithPower:1,4}"
 		},
 		// [CODEX-Stuff] Equipment - Big die: Perform 1 free action with activation power 5.
 		{
 			id:"bigDie",
-			label:"Big die",
+			label:"Gran dado",
 			action:"{ifAfterHeroRollInFight}{then}{performFreeActionWithPower:1,5}"
 		},
 		// [CODEX-Stuff] Equipment - Large die: Perform 1 free action with activation power 5.
 		{
 			id:"hugeDie",
-			label:"Huge die",
+			label:"Súper dado",
 			action:"{ifAfterHeroRollInFight}{then}{performFreeActionWithPower:1,6}"
 		},
 		// [CODEX-Stuff] Equipment - Curse: Lose max HP -2, does nothing.
 		{
 			id:"curse",
-			label:"Curse",
+			label:"Maldición",
 			action:"{loseFullHp-:2}{then}You lifted your curse, {markRoom:bossRoom}"
 		},
 		// [CODEX-Stuff] Equipment - Jacket: When entering a new room, damage 2 adjacent enemies.
