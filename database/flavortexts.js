@@ -29,7 +29,7 @@ function loadFlavorTexts() {
 			"Huele a madera quemada.",
 		],
 		rooms:[
-			"Una luz tenue filtra entre las cortinas.",
+			"Una luz tenue se filtra entre las cortinas.",
 			"Un enorme candelabro ilumina la habitación.",
 			"El suelo está tan limpio que refleja tu imagen.",
 			"Hay algunas cabezas colgando del techo.",
