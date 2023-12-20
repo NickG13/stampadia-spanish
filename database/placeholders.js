@@ -109,8 +109,7 @@ function loadPlaceholders() {
 			"Escriba",
 			"Cronista",
 		],
-		documentName:[
-			"Inscripción", // Longest
+		documentName:[ // Longest
 			"Pergamino",
 			"Documento",
 			"Mensaje",
