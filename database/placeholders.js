@@ -9,12 +9,12 @@ function loadPlaceholders() {
 		villainName:[
 			"Dragón Rojo", // Longest
 			"Señor Oscuro",
-			"Hidra",
-			"Quimera",
+			"Leviatán",
+			"Manticore",
 			"Basilisco",
 			"Minotauro",
 			"Rey Goblin",
-			"Reina Niebla",
+			"Rey Niebla",
 			"Carnicero",
 			"Cíclope",
 			"Demonio",
@@ -24,10 +24,10 @@ function loadPlaceholders() {
 			"Oscuro",
 			"Destructor",
 			"Roba-almas",
-			"Dama Oscura",
+			"Rey Oscuro",
 			"Ángel Caído",
-			"Valkiria",
-			"Gorgona",			
+			"El Caído",
+			"Gorgón",			
 			"Usurpador",
 		],
 		winningScene:[
@@ -42,9 +42,9 @@ function loadPlaceholders() {
 			"Gran Salvador", // Longest
 			"Rey",
 			"Príncipe",
-			"Princesa",
+			"Príncipe",
 			"Sargento",
-			"Reina",
+			"Rey",
 			"Sabio",
 			"Guardián",
 			"Clérigo",
@@ -53,7 +53,7 @@ function loadPlaceholders() {
 		],
 		goodGuyRelativeName:[
 			"Amigo", // Longest
-			"Mujer",
+			"Marido",
 			"Hijo",
 			"Niño",
 			"Amante",
